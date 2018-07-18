@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mansoon/Weather site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <a class="navbar-brand" href="#"><img src="weather-icon.png" height=45px width=45px id="logo"></a>
+            <a class="navbar-brand" href="#">Home</a>
+
+            <ul class="nav navbar-nav">
+                
+                <li><a href="#gallery">Gallery</a></li>
+			    <li><a href="#">News</a></li>
+                <li><a href="#">AboutMe</a></li>
+				<li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+	
+	<div style="background-color:black;" class="jumbotron text-center" >
+  <h1><b>Mansoon/Weather Check</b></h1>
+  <p>Check the Mansoon/Weather of your city! made by Umesh</p> 
+  <div align="center">
+
+</div>
+
+        <div class="container text-center" id="gif">
+            <img src="weather.gif.CROP.original-original.gif">
+        </div>
+        <div class="container">
+        <div class="jumbotron text-center" id="jumbo">
+            <h1>Check Monsoon/Weather in your city</h1>
+            <div>
+                <input class="text-center" type="text" placeholder="Enter Location" id="location" required>
+            </div>
+            <div>
+                <button id="btn_email" type="button" class="btn btn-primary" onclick="checkweather();">Check Monsoon</button>
+            </div>
+        </div>
+
+        <div id="message">
+
+        </div>
+
+        <div class="result" id="result">
+            <h1 class="text-center" font-color="blue">Enter valid location and hit Check Monsoon Button</h1>
+        </div>
+    </div>
+	
+	</div>
+
+    <div class="container" id="gallery">
+        
+        <div class="row text-center"><font color=#38350c><h2>Beauty of  Nature !!</h2></font></div>
+	<div class="row">
+		<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" id="img" src="1.jpg" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" id="img" src="2.jfif" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" id="img" src="3.jpg" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" id="img"src="4.jpg" /></div>
+    	<div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" id="img"src="5.jpg" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" id="img"src="6.jpg" /></div>
+	    <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" id="img" src="7.jpg" /></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" id="img" src="8.jpg" /></div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
